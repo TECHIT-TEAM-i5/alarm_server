@@ -9,7 +9,7 @@ public class AlarmConfig {
     @Bean
     public Queue queue(){
         return new Queue(
-                "boot.amqp.alarm-queue",
+                "boot.amqp.alarm2-queue",
                 true,
                 false,
                 true
@@ -19,7 +19,7 @@ public class AlarmConfig {
     @Bean
     public Queue authQueue(){
         return new Queue(
-                "boot.amqp.auth-queue",
+                "boot.amqp.auth2-queue",
                 true,
                 false,
                 true
